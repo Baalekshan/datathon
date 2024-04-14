@@ -4,5 +4,11 @@
   },
   "devDependencies": {
     "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start:react\" \"npm run start:server\" \"npm run start:pyserver\"",
+    "start:react": "cd frontend && npm start",
+    "start:server": "cd server && npm start",
+    "start:pyserver": "cd pyserver && python model.py"
   }
 }
