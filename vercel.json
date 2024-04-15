@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "frontend/package.json",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "pyserver/model.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [],
+    "env": {
+      "VARIABLE": "VALUE"
+    },
+    "functions": [
+      { "command": "npm install axios", "includeFiles": "frontend/**" },
+      { "command": "pip install -r requirements.txt", "includeFiles": "pyserver/**" }
+    ]
+  }
+  
