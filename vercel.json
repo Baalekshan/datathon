@@ -4,8 +4,6 @@
     "env": {
       "VARIABLE": "VALUE"
     },
-    "functions": [
-      { "command": "npm install axios", "includeFiles": "frontend/**" }
-    ]
+    "functions": []
   }
   
