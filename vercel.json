@@ -16,6 +16,7 @@
     },
     "functions": [
       { "command": "npm install axios", "includeFiles": "frontend/**" },
+      
       { "command": "pip install -r requirements.txt", "includeFiles": "pyserver/**" }
     ]
   }
