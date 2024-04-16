@@ -15,7 +15,7 @@ const [images, setImages] = useState([]);
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/submitcomplaint', {name, phonenumber, address, review, images })
+    axios.post('https://datathon-backend-six.vercel.app/submitcomplaint', {name, phonenumber, address, review, images })
     .then(res => {
     console.log(res);
     setName('')
